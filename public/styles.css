@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f8ff;
+}
+
+.navbar {
+    text-align: center;
+    background: #00008b;
+    color: white;
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question{
+    display: flex;
+}
+
+label {
+    padding: 15px;
+    
+}
+
+input, select {
+    font-size: 25px;
+}
+
+button{
+    background-color: #00008b;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 120px;
+}

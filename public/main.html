@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/plane.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Calculator</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 style="font-family: DM Serif Display;">Cost Calculator</h1>
+    </div>
+    <div class="main">
+        <form id="ticketForm" action="/result" method="post">
+            <div class="question">
+                <label>Departure City:</label>
+                <select name="departure" id="departure">
+                    <option value="default">Select an option</option>
+                    <option value="dubai">Dubai</option>
+                    <option value="abudhabi">Abu Dhabi</option>
+                    <option value="sharjah">Sharjah</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="question">
+                <label>Destination City:</label>
+                <select name="destination" id="destination">
+                    <option value="default">Select an option</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="paris">Paris</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="question">
+                <label>Passenger Count:</label>
+                <input type="number" id="count" name="count" max="9" min="1"/>
+            </div>
+            <br><br>
+            <button type="submit">Calculate</button>
+            <br><br>
+            <h1 id="result"> </h1>
+            <div id="resultBody">
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
